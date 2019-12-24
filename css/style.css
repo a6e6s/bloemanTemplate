@@ -1,3 +1,5 @@
+
+
 /* Base */
 body {
   line-height: 1.7;
@@ -954,4 +956,81 @@ h5,
 .bg-light {
   background: #ccc;
 }
+#services-section h3.bold{
+  font-size: 16px;
+}
 
+
+.hexagon {
+  display: inline-block;
+  position: relative;
+  width: 100px; 
+  height: 57.74px;
+  background-color: #4b4a4a;
+  margin: 28.87px 0;
+  border-left: solid 5px #ccc;
+  border-right: solid 5px #ccc;
+  border-radius: 10px;
+}
+
+.hexagon:before,
+.hexagon:after {
+  border-radius: 10px;
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 70.71px;
+  height: 70.71px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 9.6447px;
+}
+
+.hexagon:before {
+  top: -32.3553px;
+  border-top: solid 7.0711px #ccc;
+  border-right: solid 7.0711px #ccc;
+}
+
+.hexagon:after {
+  bottom: -32.3553px;
+  border-bottom: solid 7.0711px #ccc;
+  border-left: solid 7.0711px #ccc;
+}
+.hexagon i{
+  color: #fff;
+    font-size: 2rem;
+    position: relative;
+    z-index: 2;
+    line-height: 3.5rem;
+}
+.service{
+  border: 1px solid #eee;
+  border-bottom: double 4px #eee;
+  border-top: solid 4px #4b4a4a;
+  background: #fff;
+  padding: 30px ;
+  border-radius: 5px;
+}
+.service:hover{
+  border-top: solid 4px #966a39;
+  margin: 2px;
+}
+
+.service:hover .hexagon{
+    background-color: #b49064;
+    border-color: #966a39;
+}
+.service:hover .hexagon:before,.service:hover .hexagon:after{
+  border-color: #966a39;
+}
+.service:hover .btn{
+  background-color: #966a39;
+  border-color: #966a39;
+}
+.service h3{
+  border-bottom: 1px solid #ccc;
+  /* display: inline-block; */
+}
