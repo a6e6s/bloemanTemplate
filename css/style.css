@@ -968,8 +968,8 @@ h5,
   height: 57.74px;
   background-color: #4b4a4a;
   margin: 28.87px 0;
-  border-left: solid 5px #ccc;
-  border-right: solid 5px #ccc;
+  border-left: solid 5px #eee;
+  border-right: solid 5px #eee;
   border-radius: 10px;
 }
 
@@ -990,14 +990,14 @@ h5,
 
 .hexagon:before {
   top: -32.3553px;
-  border-top: solid 7.0711px #ccc;
-  border-right: solid 7.0711px #ccc;
+  border-top: solid 7.0711px #eee;
+  border-right: solid 7.0711px #eee;
 }
 
 .hexagon:after {
   bottom: -32.3553px;
-  border-bottom: solid 7.0711px #ccc;
-  border-left: solid 7.0711px #ccc;
+  border-bottom: solid 7.0711px #eee;
+  border-left: solid 7.0711px #eee;
 }
 .hexagon i{
   color: #fff;
