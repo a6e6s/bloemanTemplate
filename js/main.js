@@ -102,48 +102,66 @@ jQuery(document).ready(function ($) {
 	// sitePlusMinus();
 
 
-	var siteSliderRange = function () {
-		$("#slider-range").slider({
-			range: true,
-			min: 0,
-			max: 500,
-			values: [75, 300],
-			slide: function (event, ui) {
-				$("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
-			}
-		});
-		$("#amount").val("$" + $("#slider-range").slider("values", 0) +
-			" - $" + $("#slider-range").slider("values", 1));
-	};
+	// var siteSliderRange = function () {
+	// 	$("#slider-range").slider({
+	// 		range: true,
+	// 		min: 0,
+	// 		max: 500,
+	// 		values: [75, 300],
+	// 		slide: function (event, ui) {
+	// 			$("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+	// 		}
+	// 	});
+	// 	$("#amount").val("$" + $("#slider-range").slider("values", 0) +
+	// 		" - $" + $("#slider-range").slider("values", 1));
+	// };
 	// siteSliderRange();
 
 
 
 	var siteCarousel = function () {
-		if ($('.nonloop-block-13').length > 0) {
-			$('.nonloop-block-13').owlCarousel({
+		if ($('.varied-bouquets').length > 0) {
+			$('.varied-bouquets').owlCarousel({
 				center: false,
 				items: 1,
 				loop: true,
+				margin:20,
 				stagePadding: 0,
-				margin: 0,
+				margin:10,
 				autoplay: true,
 				nav: true,
-				navText: ['<span class="icon-arrow_back">', '<span class="icon-arrow_forward">'],
+				navText: ['<span class="icon-keyboard_arrow_left">', '<span class="icon-keyboard_arrow_right">'],
 				responsive: {
+					0: {
+						margin: 10,
+						nav: false,
+						items: 1
+					},
 					600: {
-						margin: 0,
+						margin: 10,
 						nav: true,
 						items: 2
 					},
 					1000: {
-						margin: 0,
+						margin: 10,
 						stagePadding: 0,
 						nav: true,
 						items: 3
 					},
 					1200: {
-						margin: 0,
+						margin: 10,
+						stagePadding: 0,
+						nav: true,
+						items: 4
+					},
+					1600: {
+						margin: 10,
+						stagePadding: 0,
+						nav: true,
+						items: 4
+					},
+					2000: {
+						margin: 10,
 						stagePadding: 0,
 						nav: true,
 						items: 4
@@ -151,29 +169,56 @@ jQuery(document).ready(function ($) {
 				}
 			});
 		}
-
-		$('.slide-items').owlCarousel({
-			nav: false,
-			margin: 30,
-			navText: "",
-			loop: true,
-			responsiveClass: true,
-			responsive: {
-				0: {
-					items: 2,
-					nav: true
-				},
-				600: {
-					items: 3,
-					nav: false
-				},
-				1000: {
-					items: 5,
-					nav: true,
-					loop: false
+		if ($('.permanent-flowers').length > 0) {
+			$('.permanent-flowers').owlCarousel({
+				center: false,
+				items: 1,
+				loop: true,
+				margin:20,
+				stagePadding: 0,
+				margin:10,
+				autoplay: true,
+				nav: true,
+				navText: ['<span class="icon-keyboard_arrow_left">', '<span class="icon-keyboard_arrow_right">'],
+				responsive: {
+					0: {
+						margin: 10,
+						nav: false,
+						items: 1
+					},
+					600: {
+						margin: 10,
+						nav: true,
+						items: 2
+					},
+					1000: {
+						margin: 10,
+						stagePadding: 0,
+						nav: true,
+						items: 3
+					},
+					1200: {
+						margin: 10,
+						stagePadding: 0,
+						nav: true,
+						items: 4
+					},
+					1600: {
+						margin: 10,
+						stagePadding: 0,
+						nav: true,
+						items: 4
+					},
+					2000: {
+						margin: 10,
+						stagePadding: 0,
+						nav: true,
+						items: 4
+					}
 				}
-			}
-		});
+			});
+		}
+		
 	};
 	siteCarousel();
 
