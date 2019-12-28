@@ -1034,3 +1034,43 @@ h5,
   border-bottom: 1px solid #ccc;
   /* display: inline-block; */
 }
+.products .section-title{
+  font-size: 1.6rem;
+}
+.products .product .inner_product{
+  border: 1px solid #e6e6e6;
+}
+.product .onsale,.product .hot{
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  background: #ad0c8f;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 9px;
+  font-size: .8rem;
+  border-radius: 50%;
+  box-shadow: 0px 0px 2px 2px #fff;
+}
+.product .hot{
+  background: #d74c60;
+}
+.product .product_box{
+  border-bottom: 1px solid #e6e6e6;
+}
+.product_box h3{
+  font-size: 1.2rem;
+  color: #000;
+}
+ins .amount{
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #212121;
+}
+.product .cart-link{
+  font-size: .9rem;
+  padding: 20px 15px;
+}
+.product .cart-link a span{
+  color: #212121;
+}
