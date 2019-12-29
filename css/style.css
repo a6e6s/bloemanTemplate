@@ -222,63 +222,65 @@ h5,
   }
 }
 
-.site-footer {
+#footer-section {
   padding: 4em 0;
   background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAOCAMAAAAPOFwLAAAATlBMVEVHcExANimbfVdyXUIbGBYkIBswKSEUExKzkGOvjGFdTDiqiV8XFhSVeFSmhV0qJB6NclBoVT2Fa0xTRDNJPS4fHBh8ZEehgVo4LyW0kGQAnl/nAAAAGXRSTlMAStiYDx4xBP33d/AKzuknwom1Z1gWp+E9WYrrygAAAGRJREFUeAF1yUUWhDAQQMGPJ7hD7n/ReeOR7toWrXEq08KmvtkAdiuv3XnJrLgZH3eXbnfzU4/xjjWe6Qr3mghUub95ReQY/jscJMr5u3OJoF/fu/aImvO5ZwPKF84V6gLLQuABqY8UTyYSUKQAAAAASUVORK5CYII=') no-repeat top center #111;
 }
-
+#footer-section .col-12{
+  margin: 30px 0;
+}
 @media (min-width: 768px) {
-  .site-footer {
+  #footer-section {
     padding: 4em 0;
   }
 }
 
-.site-footer hr {
+#footer-section hr {
   border-top: 1px solid #444;
 }
 
-.site-footer .social-media a {
+#footer-section .social-media a {
   border: 1px solid #a1b1bc;
 }
 
-.site-footer .social-media a {
+#footer-section .social-media a {
   color: #a1b1bc;
 }
 
-.site-footer .short-info {
+#footer-section .short-info {
   color: #fff;
   font-size: .9rem;
 }
 
-.site-footer h2,
-.site-footer h3,
-.site-footer h4,
-.site-footer h5 {
+#footer-section h2,
+#footer-section h3,
+#footer-section h4,
+#footer-section h5 {
   color: #fff;
 }
 
-.site-footer a {
+#footer-section a {
   color: #bfa266;
 }
 
-.site-footer a:hover {
+#footer-section a:hover {
   color: white;
 }
 
-.site-footer ul li {
+#footer-section ul li {
   margin-bottom: 10px;
 }
 
-.site-footer .footer-heading {
+#footer-section .footer-heading {
   font-size: 1.3rem;
   color: #fff;
 }
 
-.site-footer h6 {
+#footer-section h6 {
   font-size: .9rem;
 }
 
-.site-footer .tag-cloud .tag-link {
+#footer-section .tag-cloud .tag-link {
   padding: 5px;
   border: 1px solid #a1b1bc;
   margin: 5px;
@@ -286,16 +288,16 @@ h5,
   font-size: .8rem;
   color: #a1b1bc;
 }
-.site-footer .tag-cloud .tag-link:hover{
+#footer-section .tag-cloud .tag-link:hover{
   background: #bfa266;
   color: #fff;
 }
-.site-footer .navigation .nav-link{
+#footer-section .navigation .nav-link{
   padding: 0 0 5px 0;
   color: #a1b1bc;
   border-bottom: 1px solid #a1b1bc45;
 }
-.site-footer .navigation .nav-link:hover{
+#footer-section .navigation .nav-link:hover{
   color: #b49064;
 }
 
@@ -1044,7 +1046,9 @@ padding: 0 10px;
 #services-section h3.bold {
   font-size: 16px;
 }
-
+#services-section .col-12{
+  margin: 10px 0px;
+}
 
 .hexagon {
   display: inline-block;
@@ -1225,6 +1229,9 @@ ins .amount {
 }
 
 /* addons */
+#addons-section .col-12{
+  margin: 10px 0;
+}
 .addons {
   border-bottom: #b49064 6px solid;
   border-top: 1px solid #e6e6e6;
